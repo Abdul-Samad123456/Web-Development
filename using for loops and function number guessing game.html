@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function guess(){
+        const targetnumber =Math.floor(Math.random()*100)+1;
+        let attempt=0;
+
+        for(let i=0;i<10;i++){
+            const userguess =prompt("Please enter the number between 1 to 100");
+            attempt++;
+            if (userguess==targetnumber){
+                document.write("Congrulations<br>")
+                break;
+
+            }else if (userguess<targetnumber){
+              document.write("Too Low<br>");
+            }else{
+                document.write("Too High<br>")
+            }
+        }
+        document.write("The correct answer was:${targetnumber}")
+    }
+    guess();
+</script>
+
+</html>
