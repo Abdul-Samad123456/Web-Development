@@ -1,1 +1,1 @@
-# Web-Development practice
+# Javascript Code
